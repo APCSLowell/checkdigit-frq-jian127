@@ -3,12 +3,12 @@ public class CheckDigit
    
    public static int getCheck(int num) 
    {  
-     /* to be implemented in part (a) */
      int sum = 0;
-     for(int i = 1; i <= getNumberofDigits(num); i++){
-       sum += (8 - i) * getDigit(num,i);
-     }
-     return sum % 10;
+for (int i = 1; i <= getNumberOfDigits(num); i++)
+{
+sum += (8 - i) * getDigit(num, i);
+}
+return sum % 10;
    }
  
   /** Returns true if numWithCheckDigit is valid, or false    
